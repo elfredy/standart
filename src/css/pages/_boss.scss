@@ -1,0 +1,39 @@
+.boss {
+  padding: 5rem 0;
+  background-color: #e4e4e4;
+
+  &__media{
+    background-image: url('../../img/boss.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 1rem;
+    border-radius: .7rem;
+    margin-top: 1rem;
+    
+  }
+
+  &__img{
+    max-width: 18rem;
+  }
+
+  &__title1,&__title2,&__number{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1rem 0;
+  }
+
+  &__title1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__title2{
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  &__number{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}

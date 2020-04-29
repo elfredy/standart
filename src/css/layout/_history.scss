@@ -1,0 +1,72 @@
+.history{
+	padding: 5rem 0;
+	background-color: #f8f8f8;
+	
+	& h2{
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: #fff;
+		padding: 1rem;
+		border-radius: .2rem;
+		background-color: #ff2402;
+		text-align: center;
+
+
+	}
+
+	& p{
+		font-size: 1.4rem;
+		font-weight: 400;
+		padding: 2rem 1rem;
+
+	}
+
+
+	&__content{
+		background-color: #fff;
+
+
+		& img{
+			margin: 2rem;
+		}
+	}
+
+
+	&__tab{
+		border: none;
+		justify-content: center;
+		margin:3rem 0;
+
+	}
+
+	&__item{
+		margin-bottom: 0;
+
+		&:hover{
+			margin-bottom: 0 !important;
+		}
+	}
+
+	& .active{
+		border: 1px solid #ff2402 !important;
+		background-color: #fff;
+	}
+
+	&__link{
+		padding: 1rem;
+		margin: 0 .5rem ;
+		background-color: #ff2402;
+		color: #fff;
+		border: 1px solid #ff2402 !important;
+		transition: all .3s;
+
+		&:hover{
+			color: #ff2402;
+			background-color: #fff;
+			padding: 1rem !important;
+			margin: 0 .5rem !important;
+			border-radius: 0 !important;
+
+		}
+	}
+}

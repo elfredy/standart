@@ -1,0 +1,84 @@
+.reportList{
+	list-style: none;
+	font-size: 14px;
+	font-weight: 600;
+	max-width: 85%;
+	background-color: #fff;
+	padding: 1rem 3rem;
+	
+	@include respondmax(xl){
+		padding: 1rem;
+	}
+
+	@include respondmax(lg){
+		max-width: 100%;
+		font-size: 12px;
+	}
+
+	@include respondmax(md){
+		padding: 1rem 3rem;
+	}
+
+	@include respondmax(xs){
+		padding: 1rem .5rem;
+	}
+
+	&__link{
+		text-decoration:none;
+		transition: all .4s;
+
+		&:hover{
+			text-decoration: none;
+			opacity: .6;
+		}
+
+		&--1{
+
+			margin-left: 5rem;
+
+			@include respondmax(xl){
+				margin-left: 0;
+			}
+
+			@include respondmax(md){
+				margin-left: 6rem;
+			}
+
+			@include respondmax(sm){
+				margin-left: 0;
+			}
+
+		}
+	}
+
+	&__img{
+
+		@include respondmax(sm){
+			width: 1.5rem;
+		}
+	}
+
+
+	&__span{
+
+		&--2{
+			margin-left: 3.5rem;
+			margin-right: 1.5rem;
+
+			@include respondmax(xl){
+				margin-left: 1rem;
+				margin-right: 1rem;
+			}
+
+			@include respondmax(md){
+				margin-left: 3.5rem;
+				margin-right: 2.5rem;
+			}
+
+			@include respondmax(sm){
+				margin-left: 1rem;
+				margin-right: 1rem;
+			}
+		}
+	}
+}

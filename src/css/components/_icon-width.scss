@@ -1,0 +1,31 @@
+.icon-width{
+	transition: all .3s;
+	
+	@include respondmax(xl){
+		width: 2.4rem;
+
+	}
+
+	@include respondmax(lg){
+		width: 2rem;
+	}
+
+	@include respondmax(lg){
+		width: 1.6rem;
+	}
+}
+
+.icon-width-2{
+	
+	@include respondmax(xl){
+		width: 2rem;
+
+	}
+
+	@include respondmax(lg){
+		width: 1.4rem;
+		
+
+	}
+
+}

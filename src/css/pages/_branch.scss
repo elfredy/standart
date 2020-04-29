@@ -1,0 +1,50 @@
+.branch{
+	padding: 3rem 0;
+
+	@include respondmax(sm){
+		text-align: center;
+	}
+
+
+	&__label{
+
+		@include respondmax(sm){
+			width: 80%;
+		}
+
+		&:after{
+			content:'\02C7';
+			color: #ff2402;
+			font-size: 4rem;
+			position: absolute;
+			margin-left: -2.4rem;
+		}
+	}
+
+
+	&__select{
+		color: #000;
+		padding: .8rem 10rem .8rem 2rem;
+		border: 1px solid #e4e4e4;
+		border-radius: 2px;
+
+		font-size: 1.5rem;
+		font-weight: 700;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		@include respondmax(sm){
+			width: 100%;
+		}
+
+	}
+	
+
+	& .map{
+
+		margin-top: 3rem;
+		height: 50rem;	
+	}
+	
+}

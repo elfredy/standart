@@ -1,0 +1,236 @@
+.landing-page {
+  margin-top: -10rem;
+
+  & .item {
+    @include respondmax(sm) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    width: 9rem;
+    height: 9rem;
+    transition: all 0.3s;
+    margin-left: 4rem;
+    transition: all 0.3s;
+
+    @include respondmax(xl) {
+      margin-left: 2.5rem;
+	}
+	
+	@include respondmax(sm) {
+        margin-left: 0rem;
+      }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--1 {
+      background-image: url("../../img/agent.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        background-image: url("../../img/agent-red.png");
+      }
+    }
+
+    &--2 {
+      background-image: url("../../img/crash.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        background-image: url("../../img/crash-red.png");
+      }
+    }
+
+    &--3 {
+      background-image: url("../../img/pact.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 6rem;
+      @include respondmax(sm) {
+        margin-left: 0rem;
+      }
+
+      &:hover {
+        background-image: url("../../img/pact-red.png");
+      }
+    }
+
+    &--4 {
+      background-image: url("../../img/card.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        background-image: url("../../img/card-red.png");
+      }
+    }
+
+    &--5 {
+      background-image: url("../../img/offer.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 7rem;
+      @include respondmax(sm) {
+		margin-left: 1.5rem;
+      }
+
+      &:hover {
+        background-image: url("../../img/offer-red.png");
+      }
+    }
+  }
+
+  .icon-title {
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+
+    &--1 {
+      margin-left: 3rem;
+    }
+
+    & p {
+      margin-top: 5rem;
+
+      @include respondmax(xl) {
+        margin-top: 4rem;
+      }
+
+      @include respondmax(sm) {
+        margin-top: 2.5rem;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: #ff2402;
+    }
+
+    @include respondmax(xl) {
+      font-size: 1.5rem;
+    }
+
+    @include respondmax(sm) {
+      font-size: 1rem;
+    }
+  }
+
+  &__news {
+    padding: 3rem 0;
+
+    & .tab-content .active {
+      display: flex;
+    }
+
+    & .nav-link {
+      color: red;
+    }
+
+    &-tittle {
+      background-color: #fff;
+      display: flex;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 2rem 0;
+      color: #ff2402;
+      transition: all 0.3s;
+      justify-content: center;
+
+      &--1 {
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        color: #fff;
+        padding: 1rem;
+        transition: all 0.4s;
+        background-color: #ff2402;
+
+        &:hover {
+          text-decoration: none;
+          color: #fff;
+        }
+
+        @include respondmax(sm) {
+          font-size: 1.4rem;
+        }
+      }
+
+      &--2 {
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ff2402;
+        cursor: pointer;
+        margin-left: 1rem;
+
+        &:hover {
+          text-decoration: none;
+          color: #e30016;
+        }
+
+        @include respondmax(sm) {
+          font-size: 1.4rem;
+          margin-left: 0;
+        }
+      }
+    }
+
+    &-content {
+      padding: 3rem 0;
+
+      & .media img {
+        @include respondmax(lg) {
+          width: 10rem;
+        }
+
+        @include respondmax(md) {
+          width: 16rem;
+        }
+
+        @include respondmax(sm) {
+          width: 13rem;
+        }
+      }
+    }
+
+    &-title--2 {
+      font-size: 1.6rem;
+      color: red;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #e30016;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      @include respondmax(lg) {
+        font-size: 1.3rem;
+      }
+    }
+
+    &-text {
+      font-size: 1.1rem;
+
+      @include respondmax(lg) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

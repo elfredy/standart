@@ -1,0 +1,44 @@
+.contact{
+	padding: 3rem 0;
+
+	
+	&__map{
+		height: 40rem;	
+	}
+	
+
+
+	&__right{
+		font-size: 1.4rem;
+
+	}
+
+
+	&__button{
+		display: block;
+		text-transform: uppercase;
+		padding: 1rem 2.5rem;
+		border: 0;
+		margin-top: 3rem;
+		font-weight: 600;
+		background-color: #e0e0e0;
+		transition: all .3s;
+		outline: none;
+		text-decoration: none;
+		color: #000;
+
+
+		&:hover{
+			background-color: #f4f4f4;
+			text-decoration: none;
+			color: #ff2402;
+		}
+
+		&:active,
+		&:focus{
+			outline: none;
+		}
+
+
+	}
+}

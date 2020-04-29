@@ -1,0 +1,50 @@
+@import "abstracts/bt5start";
+  
+@import "abstracts/function";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/fonts";
+
+@import "components/titles"; 
+@import "components/icon-width"; 
+@import "components/media"; 
+@import "components/reportList"; 
+@import "components/dropDown";
+@import "components/pageLink"; 
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/slider";
+@import "layout/mobil-navigation";
+@import "layout/services";
+@import "layout/sticky";
+@import "layout/report";
+
+
+@import "pages/contact";
+@import "pages/landing-page";
+@import "pages/form-page";
+@import "pages/online-services";
+@import "pages/sidebar";
+@import "pages/news";
+@import "pages/search-result";
+@import "pages/branch";
+@import "pages/history";
+@import "pages/logos";
+@import "pages/complaint";
+@import "pages/information";
+@import "pages/boss";
+@import "pages/onlinePay";
+@import "pages/carier";
+@import "pages/rules";
+@import "pages/rulesIn";
+
+
+@import "abstracts/bt5end";
+
+    

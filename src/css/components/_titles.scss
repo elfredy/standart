@@ -1,0 +1,11 @@
+h1{
+	font-weight: 700;
+	font-size: 3rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 4rem;
+
+	@include respondmax (sm){
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,133 @@
+
+.navbar{
+	padding: 0.5rem 2rem ;
+	background-color: rgba(255,255,255,.88);
+	
+	transition: all .3s ease-in;
+
+	@include respondmax(lg){
+		padding: 0  3rem ;
+	}
+
+	@include respondmax(sm){
+		padding: 0 2rem;
+	}
+}
+
+.affix{
+	position: fixed;
+	padding: 0 !important;
+	transition: all .3s;
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+	z-index: 10;
+	background-color: #fff;
+
+	& .navbar{
+		padding: 2rem 1.5rem 1rem 2rem;
+	}
+
+	@include respondmax(lg){
+		padding: 1rem 0 1rem 1rem;
+	}
+
+	@include respondmax(sm){
+		& .navbar{
+			padding: 0 2rem ;
+		}
+	}
+}
+
+
+.navbar-brand{
+	width: 15rem;
+	margin: 0;
+	margin-left: 2rem;
+	transition: width .8s;
+
+	@include respondmax(xl){
+		width: 11rem;
+	}
+	
+	@include respondmax(sm){
+		width: 9rem;
+	}
+
+}
+
+.navLogo{
+	display: none;
+	transition: width .8s;
+	
+	@include respondmax(xl){
+		display: block;
+		width: 8rem;
+	}
+}
+
+.navLeft{
+	margin-left: -5rem;
+	transition: all .4s;
+}
+
+.nav-link{
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #000;
+	text-transform: uppercase;
+	transition: all .4s;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid transparent;
+	border-radius: 2px;
+
+	&:hover{
+		color: #ff2402;
+		border-bottom: 1px solid #ff2402;
+		padding-bottom: 1rem;
+
+	}
+
+	@media (min-width: 1300px){
+		font-size: 1.6rem;
+		margin-right: .8rem;
+	}
+
+
+	@include respondmax(xl){
+		font-size: 1.1rem;
+	}
+
+	@include respondmax(lg){
+		font-size: 1rem;
+	}
+}
+
+//navlink active
+.navActive{
+	color: #ff2402;
+	border-bottom: 1px solid #ff2402;
+}
+
+.navbar-toggler{
+	outline: 0;
+}
+
+.navbar-toggler-icon{
+	padding-top: .2rem;
+	font-size: 1.6rem;
+	border: 1px solid red;
+	border-radius: 5px;
+	color: red;
+}
+
+.nav-2{
+	@include respondmin(md){
+		display: none;
+	}
+}
+
+.nav-1{
+	transition: all .4s;
+	@include respondmax(md){
+		display: none;
+	}
+}

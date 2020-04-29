@@ -1,0 +1,154 @@
+.langDropdown{
+	background-color: #ff2402;
+	border-radius: 1.2rem;
+	width: 3.2rem;
+	height: 3rem;
+	text-align: center;
+	line-height: 2.2;
+	transition: all .3s;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	position: relative;
+
+	
+
+	@include respondmax(lg){
+		border-radius: .8rem;
+		width: 2.2rem;
+		height: 2rem;
+		line-height: 1.6;
+	}
+
+	&__az{
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #fff;
+		text-decoration: none;
+		margin-right: 0;
+		@include respondmax(lg){
+			font-size: 12px;
+		}
+
+		&:hover{
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+
+	
+
+	&__link{
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		background-color: #ff2402; 
+		transition: all .3s;
+		border-radius: 10px;
+		margin-top: .5rem;
+
+		&:hover{
+			color: #ff2402;
+			text-decoration: none;
+			background-color: #fff;
+		}		
+
+		@include respondmax(lg){
+			font-size: 12px;
+		}
+	}
+
+	&:hover{
+		background-color: #e81f00;
+
+		& .langContent{
+			display: block;
+		}
+	}
+
+}
+
+
+.langContent{
+	position: absolute;
+	width: 3.2rem;
+	display: none;
+	background-color: transparent;
+
+	@include respondmax(lg){
+		width: 2.2rem;
+	}
+}
+
+.navDropdown{
+	position: relative;
+	transition: all .5s;
+
+	.sub-link{
+		border-bottom: none !important;
+		padding-bottom: 1.5rem;
+
+		&:hover{
+			border-bottom: none !important;
+		padding-bottom: 1.5rem !important;
+		}
+	}
+
+	&__link{
+		font-family: 'Nunito', sans-serif;
+		font-weight: 400;
+		font-size: 1.4rem;
+		color: #000;
+		text-transform: uppercase;
+		transition: all .4s;
+		text-decoration: none;
+		display: block;
+		padding: 1rem 1rem;
+		width: 100%;
+		text-align: center;
+
+		&:hover{
+			background-color: #ff2402;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		@media (min-width: 1300px){
+			font-size: 1.5rem;
+		}
+
+
+		@include respondmax(xl){
+			font-size: 1.1rem;
+		}
+
+		@include respondmax(lg){
+			font-size: 1rem;
+		}
+	}
+
+	&:hover{
+		.navsubContent{
+			display: block;
+		}
+	}
+
+
+}
+
+.navsubContent{
+	position: absolute;
+	display: none;
+	background-color: #fff;
+	box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+	width: 28rem;
+	margin-left: -8rem;
+	
+
+	@include respondmax(xl){
+		width: 16rem;
+	}
+
+
+}

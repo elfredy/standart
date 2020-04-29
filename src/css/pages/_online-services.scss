@@ -1,0 +1,131 @@
+.online-services{
+	padding: 3rem 0;
+
+
+
+	& p{
+		font-size: 1.4rem;
+	}
+
+
+	& ul{
+		list-style: none;
+		padding: 0;
+		font-size: 1.4rem;
+	}
+
+
+	&__buttons{
+		display: flex;
+		text-align: end;
+
+
+		&-facebook{
+			color: #fff;
+			font-size: 1.4rem;
+			padding: 1rem 2rem;
+			border: 0;
+			font-weight: 700;
+			background-color: #38559c;
+			letter-spacing: 1px;
+			margin-right: 1rem;
+			transition: all .3s;
+
+			&:active,
+			&:focus{
+				outline: none;
+			}
+
+			&:hover{
+				background-color: #6181cf;
+			}
+			
+			@include respondmax(lg){
+				padding: 1rem 1rem;
+			}
+
+			@include respondmax(md){
+				padding: 1rem 2rem;
+			}
+
+
+			@include respondmax(sm){
+				padding: .5rem;
+				font-size: .8rem;
+			}
+
+		}
+
+		&-twitter{
+			color: #fff;
+			font-size: 1.4rem;
+			padding: 1rem 2rem;
+			border: 0;
+			font-weight: 700;
+			background-color: #00aaf3;
+			letter-spacing: 1px;
+			margin-right: 1rem;
+			transition: all .3s;
+			
+			@include respondmax(lg){
+				padding: 1rem 1rem;
+			}
+
+
+			@include respondmax(md){
+				padding: 1rem 2rem;
+			}
+
+			@include respondmax(sm){
+				padding: .5rem;
+				font-size: .8rem;
+			}
+
+			&:active,
+			&:focus{
+				outline: none;
+			}
+			
+
+			&:hover{
+				background-color: #a9ddf3;
+			}
+
+		}
+
+		&-google{
+			color: #fff;
+			font-size: 1.4rem;
+			padding: 1rem 2rem;
+			border: 0;
+			font-weight: 700;
+			background-color: #e14929;
+			letter-spacing: 1px;
+			transition: all .3s;
+
+			@include respondmax(lg){
+				padding: 1rem 1rem;
+			}
+
+			@include respondmax(md){
+				padding: 1rem 2rem;
+			}
+
+			@include respondmax(sm){
+				padding: .5rem;
+				font-size: .8rem;
+			}
+			
+			&:hover{
+				background-color: #f56b4e;
+			}
+
+			&:active,
+			&:focus{
+				outline: none;
+			}
+
+		}
+	}
+
+}

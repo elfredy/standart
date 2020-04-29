@@ -1,0 +1,47 @@
+.footer{
+	background-image: 
+	url('../../img/footer-img-1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+
+	padding: 3rem 0;
+	color: #fff;
+
+
+
+	&__link{
+		text-decoration: none;
+		color: #fff;
+		transition: all .3s;
+		font-size: 2rem;
+
+		&:hover{
+			text-decoration: none;
+			color: #fff;
+			opacity: .7;
+		}
+
+		& img{
+
+			@include respondmax(mgd){
+				width: 16rem;
+			}
+
+			@include respondmax(md){
+				width: 13rem;
+			}
+		}
+	}
+
+	&__address{
+		font-size: 2rem;
+
+		@include respondmax(md){
+			font-size: 1.3rem;
+		}
+	}
+
+
+}
