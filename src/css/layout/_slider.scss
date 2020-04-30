@@ -7,7 +7,8 @@
 
   & .owl-dots {
     position: absolute;
-    left: 46%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 3%;
 	margin-top: !important;
 	

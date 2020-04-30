@@ -1,50 +1,53 @@
-.branch{
+.branch {
 	padding: 3rem 0;
+	background-color: #f8f8f8;
 
-	@include respondmax(sm){
-		text-align: center;
-	}
-
-
-	&__label{
-
-		@include respondmax(sm){
-			width: 80%;
-		}
-
-		&:after{
-			content:'\02C7';
-			color: #ff2402;
-			font-size: 4rem;
-			position: absolute;
-			margin-left: -2.4rem;
-		}
-	}
-
-
-	&__select{
-		color: #000;
-		padding: .8rem 10rem .8rem 2rem;
-		border: 1px solid #e4e4e4;
-		border-radius: 2px;
-
-		font-size: 1.5rem;
-		font-weight: 700;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-
-		@include respondmax(sm){
-			width: 100%;
-		}
-
-	}
-	
-
-	& .map{
-
+	& .map {
 		margin-top: 3rem;
-		height: 50rem;	
+		height: 50rem;
+		width: 100%;
 	}
+
+	&__right {
+		padding: 3rem 3rem 0 3rem;
+
+		height: 53rem;
 	
+		overflow-y: scroll;
+	}
+
+	&__link {
+		text-align: center;
+		display: block;
+		border: 1px solid transparent;
+		border-radius: 0.8rem;
+		text-decoration: none;
+		color: #fff;
+		background-color: #ff2402;
+		max-height: 18rem;
+		max-width: 40rem;
+		font-size: 1.5rem;
+		padding: 1rem;
+		overflow: hidden;
+		transition: all 0.4s;
+		margin-bottom: 1rem;
+
+		& span {
+			width: 100%;
+			display: inline-block;
+			margin-top: 1rem;
+		}
+
+		&:hover {
+			background-color: #fff;
+			text-decoration: none;
+			color: #ff2402;
+			border: 1px solid #ff2402;
+		}
+	}
+
+	&__title {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
 }
